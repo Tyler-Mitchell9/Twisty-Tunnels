@@ -19,5 +19,5 @@ if (keyboard_check(up_key)) {
 }
 
 // Enemy movement
-obj_enemy1.x += h_speed;
-obj_enemy1.y += v_speed;
+x += h_speed;
+y += v_speed;

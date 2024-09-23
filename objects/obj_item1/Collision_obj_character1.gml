@@ -1,4 +1,4 @@
 /// @description destroys item on collision and adds value
 
 instance_destroy();
-global.coins += coin_value;
+obj_character1.coins += coin_value;

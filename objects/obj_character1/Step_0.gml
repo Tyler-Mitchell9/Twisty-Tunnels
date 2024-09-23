@@ -19,8 +19,8 @@ if (keyboard_check(up_key)) {
 }
 
 // Apply movement
-obj_character1.x += h_speed;
-obj_character1.y += v_speed;
+x += h_speed;
+y += v_speed;
 
 // Decrease invincibility timer
 if (invincibility_timer > 0) {
@@ -28,6 +28,6 @@ if (invincibility_timer > 0) {
 }
 
 // Checking if character is alive
-if (global.c1_health <= 0) {
+if (c1_health <= 0) {
 	game_restart();
 }
