@@ -8,3 +8,7 @@ draw_text(camera_x + 85, camera_y + 30, ":" + string(obj_character1.c1_health));
 
 draw_sprite(spr_item1, -1, camera_x + 40, camera_y + 120); // Display coin sprite
 draw_text(camera_x + 85, camera_y + 110, ":" + string(obj_character1.c1_coins)); // Display coin count
+
+if(obj_character1.hasKey) {	
+	draw_sprite(spr_item3, -1, camera_x + 40, camera_y + 200);   // Display key sprite IF c1 has it
+}
