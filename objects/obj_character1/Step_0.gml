@@ -32,10 +32,15 @@ if(global.pause != true) {
 	if (c1_health <= 0) {
 		game_restart();
 	}
-
-	// See if player "won" and pause game
-	if(c1_coins >= 10 && victory == false) {
+	
+	// Victory logic (walking into door with key handled in door collision)
+	if(c1_coins >= 10) {
 		victory = true;
+	}
+	
+	// See if player "won" and pause game
+	if(victory == true && postVictory == false) {
+		postVictory = true;
 		global.pause = true;
 	}
 } else {

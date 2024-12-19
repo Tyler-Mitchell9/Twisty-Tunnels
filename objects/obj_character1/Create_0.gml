@@ -18,3 +18,4 @@ down_key = ord("S");
 // booleans for endgame
 victory = false;
 global.pause = false
+postVictory = false;

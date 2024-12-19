@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"obj_character1","path":"objects/obj_character1/obj_character1.yy",},},
     {"id":{"name":"obj_displays1","path":"objects/obj_displays1/obj_displays1.yy",},},
+    {"id":{"name":"obj_door1","path":"objects/obj_door1/obj_door1.yy",},},
     {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
     {"id":{"name":"obj_item1","path":"objects/obj_item1/obj_item1.yy",},},
     {"id":{"name":"obj_item3","path":"objects/obj_item3/obj_item3.yy",},},
@@ -43,6 +44,7 @@
     {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"id":{"name":"Practice","path":"rooms/Practice/Practice.yy",},},
     {"id":{"name":"spr_character1","path":"sprites/spr_character1/spr_character1.yy",},},
+    {"id":{"name":"spr_door1","path":"sprites/spr_door1/spr_door1.yy",},},
     {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},},
     {"id":{"name":"spr_item1","path":"sprites/spr_item1/spr_item1.yy",},},
     {"id":{"name":"spr_item2","path":"sprites/spr_item2/spr_item2.yy",},},
@@ -52,8 +54,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Practice","path":"rooms/Practice/Practice.yy",},},
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
