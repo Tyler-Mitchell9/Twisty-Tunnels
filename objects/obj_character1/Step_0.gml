@@ -43,6 +43,16 @@ if(global.pause != true) {
 		postVictory = true;
 		global.pause = true;
 	}
+	
+	// Advance to room2
+	if(victory == true) {
+		timer++;
+		
+		if(timer >= room_speed * 2) {
+			room_goto(Practice);
+		}
+	}
+	
 } else {
 	// Unpause option
 	if(global.pause && keyboard_check_pressed(vk_space)) {  // Use space to unpause

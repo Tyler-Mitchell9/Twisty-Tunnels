@@ -19,3 +19,4 @@ down_key = ord("S");
 victory = false;
 global.pause = false
 postVictory = false;
+timer = 0;

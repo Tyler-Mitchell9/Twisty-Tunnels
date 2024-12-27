@@ -54,8 +54,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Practice","path":"rooms/Practice/Practice.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
+    {"roomId":{"name":"Practice","path":"rooms/Practice/Practice.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
