@@ -1,6 +1,9 @@
 /// @description Character movement, character hp management, victory management
 
 if (global.pause != true) {
+	// Increase move speed based on coins
+	move_speed = 5 + c1_coins;
+	
     // Horizontal Movement
     if (keyboard_check(left_key) && !place_meeting(x - move_speed, y, obj_wall1)) {
         h_speed = -move_speed;
@@ -33,13 +36,9 @@ if (global.pause != true) {
         game_restart();
     }
 
-    // Victory logic (walking into door with key handled in door collision)
-    if (c1_coins >= 10) {
-        victory = true;
-    }
-
     // See if player "won" and pause game
     if (victory == true && postVictory == false) {
+		c1_health = 9999
         postVictory = true;
         global.pause = true;
     }
