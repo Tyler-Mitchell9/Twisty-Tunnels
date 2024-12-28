@@ -19,5 +19,5 @@ if (obj_character1.victory == true && global.pause == true) {
     // Draw the white text
     draw_set_color(c_white); // Set the color to white
     draw_text(gui_width / 2, gui_height / 2 - 20, "Congratulations, You Won!");
-    draw_text(gui_width / 2, gui_height / 2 + 20, "To continue, click \"Space\" to advance!");
+    draw_text(gui_width / 2, gui_height / 2 + 20, "Click \"Space\" to advance!");
 }

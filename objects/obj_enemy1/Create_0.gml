@@ -3,10 +3,10 @@
 e1_health = 100; // Enemy health
 h_speed = 0;  // Horizontal speed
 v_speed = 0;  // Vertical speed
-move_speed = 5;  // Speed at which the enemy moves
+move_speed = 4;  // Speed at which the enemy moves
 
-// Controls
-left_key = ord("J");
-right_key = ord("L");
-up_key = ord("K");
-down_key = ord("I");
+homeArea = 500; // Area of the home base (slightly less than max tracking)
+tracking_radius = 600; // Tracking radius
+homeBase_x = x; // Home base coord
+homeBase_y = y; // Home base coord
+trackingState = false; // If enemy is currently tracking
