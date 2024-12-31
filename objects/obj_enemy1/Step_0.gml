@@ -9,7 +9,7 @@ if (instance_exists(obj_character1)) {
     if (dist_to_homeBase <= homeArea) {
         trackingState = true; // Start tracking the player
     }
-
+	
     // If the enemy is tracking the player
     if (trackingState) {
         // Get the direction to the player
