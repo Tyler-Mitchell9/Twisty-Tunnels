@@ -10,3 +10,5 @@ tracking_radius = 400; // Tracking radius
 homeBase_x = x; // Home base coord
 homeBase_y = y; // Home base coord
 trackingState = false; // If enemy is currently tracking
+
+pathFollow = false; // Default path tracking state
