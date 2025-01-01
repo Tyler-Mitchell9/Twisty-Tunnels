@@ -11,3 +11,6 @@ homeBase_y = y; // Home base coord
 trackingState = false; // If enemy is currently tracking player
 
 pathFollow = false; // Default path tracking state
+
+shootCooldown = 0; // Set cooldown = 0 to start
+arrowDirection = 0; // Arrow direction declaration

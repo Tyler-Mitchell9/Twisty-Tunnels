@@ -1,4 +1,4 @@
-/// @description Enemy omnidirectional movement
+/// @description Enemy shooting behavoir
 
 // Ensure the player exists
 if (instance_exists(obj_character1)) {
@@ -8,24 +8,25 @@ if (instance_exists(obj_character1)) {
     // Check if the player is within the home base area
     if (dist_to_homeBase <= homeArea) {
         trackingState = true; // Start tracking the player
-		sprite_index = spr_enemy2_focused;
+		sprite_index = spr_enemy2_focused; // Change sprite if tracking
     } else {
 		trackingState = false;
-		sprite_index = spr_enemy2;
+		sprite_index = spr_enemy2; // Sprite back to normal if not tracking
+		shootCooldown = 0;
 	}
 	
     // If the enemy is tracking the player
     if (trackingState) {
-        // Get the direction to the player
-        var direction_to_player = point_direction(x, y, obj_character1.x, obj_character1.y);
-
-        // Calculate the intended movement along each axis
-        var move_x = lengthdir_x(move_speed, direction_to_player);
-        var move_y = lengthdir_y(move_speed, direction_to_player);
-
-        // Check if the player has moved beyond tracking radius
-        if (dist_to_homeBase > homeArea) {
-            trackingState = false; // Stop tracking and return to home base
-        }
+        // Shoot an arrow if cooldown is over
+        if (shootCooldown <= 0) {  // If cooldown is done
+            var arrow = instance_create_layer(x, y, "Instances_1", obj_enemy2_item1);  // Create the arrow at the enemy's position
+            var direction_to_player = point_direction(x, y, obj_character1.x, obj_character1.y);  // Get direction to player
+            arrowDirection = direction_to_player;  // Set the direction of the arrow towards the player
+            
+			// Cooldown for shooting
+			shootCooldown = room_speed * 1;
+        } else {
+			shootCooldown--;
+		}
     }
 }

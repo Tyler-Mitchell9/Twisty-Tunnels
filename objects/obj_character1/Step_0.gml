@@ -28,8 +28,11 @@ if (global.pause != true) {
 
     // Decrease invincibility timer
     if (invincibility_timer > 0) {
+		sprite_index = spr_character1_invincible;
         invincibility_timer -= 1;
-    }
+    } else {
+		sprite_index = spr_character1;
+	}
 
     // Checking if character is alive
     if (c1_health <= 0) {
