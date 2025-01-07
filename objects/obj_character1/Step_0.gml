@@ -31,7 +31,7 @@ if (global.pause != true) {
 		sprite_index = spr_character1_invincible;
         invincibility_timer -= 1;
     } else {
-		sprite_index = spr_character1;
+		sprite_index = spr_Charecter_Walking_Down;
 	}
 
     // Checking if character is alive
