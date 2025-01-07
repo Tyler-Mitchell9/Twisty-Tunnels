@@ -1,3 +1,2 @@
-/// @description Arrow collision with wall
-
+/// @description Arrow collision with wall.
 instance_destroy();
