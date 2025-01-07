@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_character1",
-    "path":"sprites/spr_character1/spr_character1.yy",
+    "name":"spr_Charecter_Walking_Down",
+    "path":"sprites/spr_Charecter_Walking_Down/spr_Charecter_Walking_Down.yy",
   },
   "spriteMaskId":null,
   "visible":true,
